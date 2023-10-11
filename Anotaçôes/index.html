@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  <!-- Padrao de Codificação que suporta Açentuação-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--link:favicon= Imagem a frente do title no topo da página-->
+    <title>Anotações</title>
+</head>
+<body>
+    <h1>.</h1> <!-- Título de nível 1-->
+    <h2>.</h2> <!--Sub Titulo / Titulo de nivel 2-->
+    <h3>.</h3> <!--Sub Sub título / Título de nivel 3-->
+    <hr> <!-- Linha Horizontal-->
+    <p>.</p> <!-- Parágrafo-->
+    <br> <!-- quebra de linha -->
+    &lt; <!-- Sinal de Menor-->
+    &gt; <!-- Sinal de Maior-->
+    <img src="" alt=""> <!-- Carregar Imagem HTML--> <!-- src= Source/Origem--> <!-- Alt= Texto Alternativo-->
+    <address>.</address> <!-- Endereço-->
+    <strong>.</strong> <!--Negrito/ Destaque-->
+    <em>.</em> <!--itálico/ênfase-->
+    <mark>.</mark> <!--Marcador de texto-->
+    <small>.</small> <!--Letras pequenas-->
+    <ins>.</ins> <!--Sublinhado/texto inserido-->
+    <del>.</del> <!--Texto Excluído/Riscado-->
+    <sup>.</sup> <!--Textp Sobrescrito-->
+    <sub>.</sub> <!--Texto Subscrito-->
+    <code>.</code> <!--Código Fonte-->
+    <pre>.</pre> <!--Pré Formatação-->
+    <q>.</q> <!--citação-->
+    <blockquote>.</blockquote> <!--citação em bloco-->
+    <abbr title=""></abbr> <!--Abreviação-->
+    <bdo dir=""></bdo> <!--Texto Invertido-->
+    <ol></ol> <!-- Lista Ordenada/Numérica-->
+    <ul></ul> <!-- Lista Não Ordenada/Simbolos-->
+    <li></li> <!-- Item na Lista-->
+    <a href="" target="_blank"  rel="external" ></a> <!-- Âncora--> <!-- href= Referencia Hipertexto--> 
+    target="_blank" <!-- Abrir link em uma nova aba (Página em branco)-->
+    target="_self" <!-- Abrir link na mesma aba-->
+    rel="external" <!-- Relativo a Externo(Fora do site) -->
+    rel="next <!-- Semantica para próximo-->
+    rel="nofollow <!-- Não Siga -->
+    ../ <!-- Voltar uma pasta -->
+    <a href="Teste.pdf" download="Teste.pdf" type="application/pdf"> </a> <!-- Para por PDF para download-->
+    <a href="Teste.zip" download="Teste.zip" type="application/zip"> </a> <!-- Para por zip para download--> 
+    <picture> <!-- Imagens-->
+        <!-- Exemplo de Imagem Flexível-->
+        <source media="(max-width: 750px)" srcset="Teste-P.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="Teste-M.png" type="image/png">
+      <img src="Teste-G" alt="#">
+    </picture>
+    <!-- Exemplo de Áudio em vários tipos--> 
+    <audio preload="metadata" controls> 
+        <!--preload="auto" Só vai considerar que o site terminou de carregar após carregar todo o áudio-->
+        <!--preload="metadata" Carrega algumas informações do arquivo-->
+        <!--preload="none" não carrega nada-->        
+        <source src="teste.mp3" type="audio/mpeg">
+        <source src="teste.ogg" type="audio/ogg">
+        <source src="teste.wav" type="audio/wav">
+    </audio> <!--Controls= Controle de Play e Pause--> <!--Autoplay= iniciar automaticamente o audio-->
+    <video width="500" poster="imagens/capateste.png" controls> <!--Vídeo em Hospedagem no próprio servidor-->
+        <!--width= tamanho do video no site (não influencia o tamanho do arquivo)-->
+        <!--poster= imagem de capa do vídeo-->
+        <source src="mídia/teste-video.mp4" type="video/mp4">
+        <source src="mídia/teste-video.m4v" type="video/m4v">
+        <source src="mídia/teste-video.webm" type="video/webm">
+        <source src="mídia/teste-video.ogv" type="video/ogv">
+    </video> <!--Vídeo de Hospedagem externa-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    <!--Representação por nomes-->
+        <h2 style="background-color:blue; color: white;">Exemplo de Cores</h2>
+    <!--Representação por códigos Hexadecimais-->
+    <!-- Decimal: 0 1 2 3 4 5 6 7 8 9 -->
+    <!-- Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F -->
+        <h2 style="background-color: #0000ff; color: #ffffff;">Exemplo de Cores</h2>
+    <!-- Representação em RGB (Red, Green, Blue)-->
+        <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de Cores</h2>
+    <!-- Representação em HSL (hue, Saturation, Luminosity)-->
+         <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0 , 0%, 100%);">Exemplo de Cores</h2>
+    <!-- Cores Primárias-->
+        Amarelo, Vermelho e Azul
+    <!-- Cores Secundárias-->
+        Laranja, Violeta e Verde
+    <!-- Cores Terciárias-->
+        Amarelo-esverdeado, Amarelo-alaranjado, Vermelho-alaranjado, Vermelho-arroxeado, Azul-arroxeado, Azul-esverdeado
+    <!-- Cores Frias-->
+        Amarelo-esverdeado, Verde, Azul-esverdeado, Azul, Azul-arroxeado, Violeta
+    <!-- Cores quentes-->
+        Amarelo, Amarelo-alaranjado, Laranja, Vermelho-alaranjado, Vermelho, Vermelho-arroxeado
+    <!-- Cores complementares = Cores com mais contrastes entre si-->
+    <!-- Cores Análogas =  Cores que não tem contrastes entre si-->
+    <!-- * = configurações globais das CSS-->
+    <!-- Medidas absolutas - cm, mm, in, px, pt, pc -->
+    <!-- Medidas Relativas - em, ex, rem, vw, vh, % -->
+    <!-- 16px = 1em-->
+    <!-- Medidas Oficiais recomendadas pela W3C - px e em -->
+    <!-- Weight = Peso-->
+    <!-- Widht = Largura-->
+    <!-- Height = Altura-->
+    <style>
+        body { font-size:} = /* Tamanho  da fonte */
+        body { font-weight:} = /* Peso da fonte */ 
+        body { font-style: } = /*Estilo da fonte = */ 
+        body { text-decoration: underline;} /* Sublinhado */
+        /* Variações de weight - Lighter normal bold bolder e de 100 a 900*/
+        /* shorthand font ordem -
+        font-style -> font-weight -> font size -> font-family */
+        /* Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        -svg */
+
+        /* SELETORES PERSONALIZADOS
+        em HTML é id = em CSS é # (só pode um elemento por página)
+        em HTML é class = em CSS é . (pode varios elementos)
+        : = pseudo-class
+        :: = pseudo-element
+        > = children */
+        /* BOX LEVEL
+        div / h1-h6 / p / main / header / nav / article / aside / footer / form / video
+        */
+        /* INLINE LEVEL
+        span / a / code / smarll / strong / em / sup-sub / label / button / input / select */
+        
+        /* Shorthand - border: 10px(width) solid(style) darkslategray(color) */
+
+        /* Shorthand - padding: 10px(top) 10px(right) 10px(bottom) 10px(left) 
+          se for a mesma medida, basta apenas colocar uma vez ( padding: 10px)*/
+
+        /* Shorthand - margin: 20px(top) 20px(right) 20px(bottom) 40px(left) 
+        se for a mesma medida, basta apenas colocar uma vez ( margin: 10px)*   
+        margin:auto = margem automatica /
+
+        /* Shorthand - outline: 2px(width) dashed(style) salmon(color) */
+        
+    </style>
+    <header></header> = Cabeçalho
+    <main> </main> = Conteudo principal
+    <footer></footer> = rodapé 
+    <nav> </nav> = Links Semanticos
+    <section> </section> = Sessão Semantica
+    <article></article> = artigo Semanticos
+    <aside></aside>
+
+    Exemplo vídeo responsivo
+    div.video {
+        background-color: var(--cor5);
+        margin: 0px -20px 30px -20px; 
+        padding: 20px;
+        padding-bottom: 57%;
+        position: relative;
+    
+    }
+    
+    div.video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        
+    }
+
+</body>
+</html>
